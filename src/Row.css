@@ -1,0 +1,37 @@
+.row {
+  color: white;
+  margin-left: 20px;
+} /*a small gap in left*/
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+/*padding here is to not crop the image while hovering over it*/
+
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+/*never show scrollbar but keep the fuctionality*/
+
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms; /*to delay the transition of image while hovering*/
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}
+
+.row_posterLarge {
+  max-height: 250px;
+}
+
+.row_posterLarge:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}

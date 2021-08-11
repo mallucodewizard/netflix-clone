@@ -1,0 +1,33 @@
+.nav {
+  /* pos and top used to fix the log even though scrolling happens  */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+
+  /* Animation */
+  transition-timing-function: ease-in; /*for fading effect use ease in*/
+  transition: all 0.5s;
+}
+.nav__black {
+  background-color: #111;
+}
+
+.nav__logo {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  width: 85px;
+  object-fit: contain;
+  /* by adding width 80 the logo will bcm small but it crunches out we need to add objctft contain to make the logo fit in that width */
+}
+
+.nav__avatar {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  width: 25px;
+  object-fit: contain;
+}
